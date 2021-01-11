@@ -5,5 +5,13 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky"); 
         }
-    })
+    });
+
+    // navbar toggle
+
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
 });
