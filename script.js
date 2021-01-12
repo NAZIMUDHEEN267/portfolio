@@ -5,6 +5,34 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("scroll"); 
         }
+        if(this.scroll > 500){
+            $('scroll-up-btn').addClass("show");
+        }else{
+            $('scroll-up-btn').removeClass("show"); 
+        }
+    });
+
+    //slide-up
+
+    $('scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+    });
+
+
+    //typing
+
+    var typed = new Typed(".typing", {
+        strings: ["Pentester", "Devoleper" , "Designer" , "Programmer" ,"youtuber" ],
+        typeSpeed:100,
+        backSpeed:60,
+        loop :true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Pentester", "Devoleper" , "Designer" , "Programmer" ,"youtuber" ],
+        typeSpeed:100,
+        backSpeed:60,
+        loop :true
     });
 
     // navbar toggle
