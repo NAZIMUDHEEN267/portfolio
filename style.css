@@ -443,7 +443,25 @@ font-weight: 500;
 
 
 
+#social-media p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
 
+.social-icons img{
+    width: 5rem;
+    transition: 0.5s;
+    padding-left: 2rem;
+}
+.social-icons a:hover img{
+    transform: translateY(-10px);
+} 
+
+hr{
+    background-color: crimson;
+}
 
 
 
