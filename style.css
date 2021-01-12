@@ -192,7 +192,7 @@ section .title::after{
 
 /*----------------------------------about-section---------------------------------------------*/
 
-    .about , .services{
+    .about , .services , .contact{
         font-family: 'Poppins',sans-serif;
     }
 
@@ -201,7 +201,7 @@ section .title::after{
         content: 'who i am';
     }
 
-    .about .about-content , .services .services-content{
+    .about .about-content , .services .services-content , .contact .contact-content{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -325,18 +325,120 @@ section .title::after{
 
 
 
+
+/*----------------------------------contact-section---------------------------------------------*/
+
+
 .contact .title::after{
     content: 'get in touch';
 }
 
+.contact .contact-content .column{
+    width: calc(50% - 30px);
 
+}
 
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
+.contact .contact-content .left p{
+    text-align: justify;
+    
+}
 
+.contact .contact-content .left .icons{
+    margin: 10px 0;
 
+}
 
+.contact .contact-content .left .row{
+display: flex;
+height: 65px;
+align-items: center;
+}
 
+.contact .contact-content .left .row .info{
 
+    margin-left: 30px;
+
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head{
+font-weight: 500;
+
+}
+
+.contact .contact-content .info .sub-title{
+    color: #333;
+
+}
+
+.contact .right .form .fields{
+    display: flex;
+
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .fields input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border:1px solid lightgray ;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+    margin-top: 10px;
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border:2px solid crimson ;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover{
+    background: none;
+    color: crimson;
+}
+/*--------------------x--------------contact-section-----------------------x----------------------*/
 
 
 
@@ -472,6 +574,10 @@ section .title::after{
         margin-bottom: 20px;
     }
 
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 
 }
 
