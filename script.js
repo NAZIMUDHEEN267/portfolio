@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
-            $('.navbar').addClass("scroll");
+            $('.navbar').addClass("sticky");
         }else{
-            $('.navbar').removeClass("scroll"); 
+            $('.navbar').removeClass("sticky"); 
         }
         if(this.scroll > 500){
             $('scroll-up-btn').addClass("show");

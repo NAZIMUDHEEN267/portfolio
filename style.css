@@ -22,7 +22,7 @@ html{
     transition: all 0.3s ease;
 }
 
-.navbar .scroll{
+.navbar .sticky{
     padding: 15px 0;
     background: black;
 }
@@ -51,7 +51,7 @@ html{
     transition: all 0.3s ease;
 }
 
-.navbar .scroll .logo a span{
+.navbar .sticky .logo a span{
     color: #fff;
 }
 
@@ -72,7 +72,7 @@ html{
     color: crimson;
 }
 
-.navbar .scroll .menu li a:hover{
+.navbar .sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -195,7 +195,7 @@ section .title::after{
 
 /*----------------------------------about-section---------------------------------------------*/
 
-    .about , .services , .contact, footer , .social{
+    .about , .services , .contact, footer , .social,.skills{
         font-family: 'Poppins',sans-serif;
     }
 
@@ -204,7 +204,7 @@ section .title::after{
         content: 'who i am';
     }
 
-    .about .about-content , .services .services-content , .contact .contact-content{
+    .about .about-content , .services .services-content , .contact .contact-content ,.skills .skills-content{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -328,6 +328,93 @@ section .title::after{
 
 
 
+/*----------------------------------skills-section---------------------------------------------*/
+
+.skills .title::after{
+content: 'what i know';
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+margin-bottom: 10px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray; 
+    position: relative;   
+}
+.skills .skills-content .right .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+
+}
+
+.skills-content .right .html::before{
+    width: 80%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .node::before{
+    width: 80%;
+}
+
+.skills-content .right .python::before{
+    width: 80%;
+}
+.skills-content .right .c::before{
+    width: 80%;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    text-align: justify;
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+/*-----------------x-----------------skills-section-------------------------x--------------------*/
+
+
 
 /*----------------------------------contact-section---------------------------------------------*/
 
@@ -446,6 +533,32 @@ font-weight: 500;
 .social{
     text-align: center;
 }
+
+.social .title{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+    color: crimson;
+}
+
+
+
+.social .title::before{  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 180px;
+    height: 3px;
+    background:#111;
+    transform: translateX(-50%);
+}
+
 
 .social p{
     font-size: 1rem;
@@ -645,6 +758,10 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 
 }
 
@@ -663,7 +780,7 @@ footer span a:hover{
         font-size: 20px;
     }
 
-    .services .services-content .card{
+    .services .services-content .card,.skills .skills-content .column{
 
         width: 100%;
     }
