@@ -18,8 +18,9 @@ html{
     width: 100%;
     z-index: 999;
     font-family: 'Ubuntu', sans-serif;
-    padding: 30px 0;
+    padding: 20px 0;
     transition: all 0.3s ease;
+    background: crimson;
 }
 
 .navbar .sticky{
@@ -47,7 +48,7 @@ html{
 }
 
 .navbar .logo a span{
-    color: crimson;
+    color: #fff;
     transition: all 0.3s ease;
 }
 
@@ -69,7 +70,7 @@ html{
 }
 
 .navbar .menu li a:hover{
-    color: crimson;
+    color: black;
 }
 
 .navbar .sticky .menu li a:hover{
@@ -149,14 +150,6 @@ html{
     width: 55%;
  }
 
- .home .right img{
-     height: 400px;
-     width: 400px;
-     object-fit: cover;
-     border-radius: 6px;
- }
-
- 
  .home .right{
      width: 45%;   
  }
@@ -166,6 +159,7 @@ html{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    margin-top: 4rem;
 }
 
 
